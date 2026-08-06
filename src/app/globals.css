@@ -239,13 +239,24 @@
 
   /* Date inputs otherwise impose a browser-native minimum content width
      (icon + formatted segments) that ignores our width: 100%, overflowing
-     narrow dialogs on mobile Safari/Chrome. */
+     narrow dialogs on mobile Safari/Chrome. Capping max-width and trimming
+     the internal fields/icon spacing is what actually makes them shrink;
+     min-width: 0 alone is not enough on mobile WebKit/Blink. */
   input[type='date'] {
     min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5rem;
+  }
+
+  input[type='date']::-webkit-datetime-edit {
+    max-width: calc(100% - 1.5rem);
+    overflow: hidden;
   }
 
   input[type='date']::-webkit-calendar-picker-indicator {
     margin-left: 0;
+    padding: 0;
   }
 }
 
