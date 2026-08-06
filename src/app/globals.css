@@ -236,6 +236,17 @@
   ::selection {
     @apply bg-primary/20;
   }
+
+  /* Date inputs otherwise impose a browser-native minimum content width
+     (icon + formatted segments) that ignores our width: 100%, overflowing
+     narrow dialogs on mobile Safari/Chrome. */
+  input[type='date'] {
+    min-width: 0;
+  }
+
+  input[type='date']::-webkit-calendar-picker-indicator {
+    margin-left: 0;
+  }
 }
 
 @layer utilities {
