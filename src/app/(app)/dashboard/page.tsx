@@ -252,12 +252,12 @@ export default async function DashboardPage({
           <ProgressStats pages={pages} />
 
           <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
-            <Card>
+            <Card className="min-w-0">
               <CardHeader>
                 <CardTitle>Activity</CardTitle>
                 <CardDescription>The last year, day by day</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="min-w-0 space-y-4">
                 <ActivityHeatmap days={activity} />
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <p className="text-sm text-muted-foreground">
@@ -276,7 +276,7 @@ export default async function DashboardPage({
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="min-w-0">
               <CardHeader>
                 <CardTitle>Across the mushaf</CardTitle>
                 <CardDescription>Not just how much, but where</CardDescription>

@@ -7,6 +7,8 @@ import { requireUser } from '@/features/auth/server';
 import { initialsFrom, UserMenu } from '@/features/profile';
 import { OfflineBanner } from '@/features/offline';
 import { getProfile } from '@/features/profile/server';
+import { NavLinks } from './nav-links';
+import { PageTransition } from './page-transition';
 
 /**
  * Application shell.
@@ -46,17 +48,11 @@ export default async function AppLayout({
             <Link href="/dashboard">
               <Logo />
             </Link>
-            <nav className="hidden items-center gap-1 md:flex">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
+            <NavLinks
+              links={links}
+              className="hidden items-center gap-1 md:flex"
+              linkClassName="rounded-md px-2 py-1 text-sm"
+            />
           </div>
           <div className="flex items-center gap-1">
             <ThemeToggle />
@@ -76,21 +72,15 @@ export default async function AppLayout({
           navigation moves to a scrollable strip rather than a hamburger: one
           tap instead of two, and the destinations stay visible. */}
       <div className="border-b md:hidden">
-        <nav className="mx-auto flex w-full max-w-6xl gap-1 overflow-x-auto px-4 py-2">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="shrink-0 rounded-md px-2.5 py-1 text-sm whitespace-nowrap text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <NavLinks
+          links={links}
+          className="mx-auto flex w-full max-w-6xl gap-1 overflow-x-auto px-4 py-2"
+          linkClassName="shrink-0 rounded-md px-2.5 py-1 text-sm whitespace-nowrap"
+        />
       </div>
 
       <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
-        {children}
+        <PageTransition>{children}</PageTransition>
       </main>
     </div>
   );
