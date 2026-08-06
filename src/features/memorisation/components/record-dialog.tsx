@@ -31,6 +31,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
+import { DatePicker } from '@/components/ui/date-picker';
 import { Input } from '@/components/ui/input';
 import {
   Select,
@@ -104,16 +105,11 @@ function MetadataFields<TValues extends FieldValues>({
             <FormItem className="min-w-0">
               <FormLabel>Date</FormLabel>
               <FormControl>
-                <Input
-                  name={field.name}
-                  ref={field.ref}
-                  onBlur={field.onBlur}
-                  onChange={field.onChange}
+                <DatePicker
                   value={typeof field.value === 'string' ? field.value : ''}
-                  type="date"
+                  onChange={field.onChange}
                   max={today()}
                   disabled={disabled}
-                  className="w-full min-w-0"
                 />
               </FormControl>
               <FormMessage />

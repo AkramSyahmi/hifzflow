@@ -26,6 +26,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
+import { DatePicker } from '@/components/ui/date-picker';
 import { Input } from '@/components/ui/input';
 import {
   Select,
@@ -231,12 +232,11 @@ export function CreateGoalDialog({
                 <FormItem className="min-w-0">
                   <FormLabel>Target date</FormLabel>
                   <FormControl>
-                    <Input
-                      {...field}
-                      type="date"
+                    <DatePicker
+                      value={field.value}
+                      onChange={field.onChange}
                       min={new Date().toISOString().slice(0, 10)}
                       disabled={pending}
-                      className="w-full min-w-0"
                     />
                   </FormControl>
                   <FormMessage />
