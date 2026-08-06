@@ -96,12 +96,12 @@ function MetadataFields<TValues extends FieldValues>({
 
   return (
     <>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid min-w-0 gap-4 sm:grid-cols-2">
         <FormField
           control={control}
           name={dateField}
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="min-w-0">
               <FormLabel>Date</FormLabel>
               <FormControl>
                 <Input
@@ -113,6 +113,7 @@ function MetadataFields<TValues extends FieldValues>({
                   type="date"
                   max={today()}
                   disabled={disabled}
+                  className="w-full min-w-0"
                 />
               </FormControl>
               <FormMessage />

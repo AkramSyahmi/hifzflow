@@ -175,7 +175,7 @@ export function CreateGoalDialog({
             />
 
             {scopeType !== 'quran' ? (
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid min-w-0 grid-cols-2 gap-4">
                 <FormField
                   control={form.control}
                   name="scopeFrom"
@@ -192,6 +192,9 @@ export function CreateGoalDialog({
                           disabled={pending}
                         />
                       </FormControl>
+                      <FormDescription className="invisible">
+                        Placeholder
+                      </FormDescription>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -225,7 +228,7 @@ export function CreateGoalDialog({
               control={form.control}
               name="targetDate"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="min-w-0">
                   <FormLabel>Target date</FormLabel>
                   <FormControl>
                     <Input
@@ -233,6 +236,7 @@ export function CreateGoalDialog({
                       type="date"
                       min={new Date().toISOString().slice(0, 10)}
                       disabled={pending}
+                      className="w-full min-w-0"
                     />
                   </FormControl>
                   <FormMessage />
