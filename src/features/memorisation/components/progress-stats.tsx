@@ -53,7 +53,7 @@ export function ProgressStats({ pages }: { pages: readonly PageStatus[] }) {
   const percent = ((memorisedAyahs / TOTAL_AYAHS) * 100).toFixed(1);
 
   return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
       <Stat
         label="Of the Quran"
         value={`${percent}%`}
