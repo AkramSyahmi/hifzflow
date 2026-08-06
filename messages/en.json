@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "memorisation": "Memorisation",
+    "murajaah": "Murajaah",
+    "goals": "Goals",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "profile": "Profile",
+    "signOut": "Sign out",
+    "accountMenu": "Account menu",
+    "signingOut": "Signing out"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "Match system"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Your account, preferences and data.",
+    "profile": {
+      "title": "Profile",
+      "description": "How you appear in the app",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "timezone": "Timezone",
+      "timezoneHelp": "Every streak, daily target and review queue is measured against your local day. Getting this wrong is the usual reason a streak appears to reset overnight.",
+      "save": "Save changes",
+      "saving": "Saving",
+      "saved": "Profile updated."
+    },
+    "language": {
+      "title": "Language",
+      "description": "Interface language",
+      "label": "Language",
+      "help": "Bahasa Malaysia covers navigation, settings and sign-in. The remaining screens are being translated and stay in English until they are done.",
+      "changed": "Language updated."
+    },
+    "appearance": {
+      "title": "Appearance",
+      "description": "Light, dark, or follow your device",
+      "help": "Stored on this device so the correct theme is applied before the first paint. It is not synced across devices."
+    },
+    "reminders": {
+      "title": "Reminders",
+      "description": "A daily nudge for your murajaah",
+      "enable": "Daily reminder",
+      "time": "Time",
+      "timeHelp": "In your local timezone.",
+      "pending": "Reminders are saved but not yet delivered — push notifications arrive in a later release.",
+      "saved": "Reminders updated."
+    },
+    "data": {
+      "title": "Your data",
+      "description": "Everything the app holds about you",
+      "export": "Download my data",
+      "exporting": "Preparing",
+      "exportHelp": "A JSON file containing your profile, memorisation records, review history, plan and goals. Quran reference data is excluded — it is identical for everyone.",
+      "exported": "Download started."
+    },
+    "danger": {
+      "title": "Delete account",
+      "description": "Permanent, and immediate",
+      "warning": "This deletes your account and every record attached to it: memorisation, review history, plan, goals and notes. It cannot be undone and there is no recovery period.",
+      "exportFirst": "Download your data first if you want to keep any of it.",
+      "confirmLab": "Type {phrase} to confirm",
+      "confirmPhrase": "delete my account",
+      "delete": "Delete my account",
+      "deleting": "Deleting"
+    }
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signInSubtitle": "Pick up where you left off.",
+    "signUp": "Create your account",
+    "signUpSubtitle": "Set up your memorisation plan in a few minutes.",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "forgotPassword": "Forgot password?",
+    "newHere": "New here?",
+    "createAccount": "Create an account",
+    "haveAccount": "Already have an account?",
+    "continueWithGoogle": "Continue with Google",
+    "signInWithGoogle": "Sign in with Google",
+    "signUpWithGoogle": "Sign up with Google",
+    "or": "or"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading"
+  },
+  "offline": {
+    "offline": "You are offline. Anything you record is saved on this device and sent when you reconnect.",
+    "offlineWithQueue": "Offline · {count} change(s) waiting to sync",
+    "queued": "{count} change(s) waiting to sync",
+    "syncing": "Syncing your changes",
+    "retry": "Retry now",
+    "title": "You are offline",
+    "body": "This page has not been opened while online, so there is no cached copy to show. Anything you recorded is safe on this device and will sync when you reconnect.",
+    "backOnline": "Try again"
+  }
+}

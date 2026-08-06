@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "dashboard": "Papan Pemuka",
+    "memorisation": "Hafazan",
+    "murajaah": "Muraja'ah",
+    "goals": "Sasaran",
+    "analytics": "Analitik",
+    "settings": "Tetapan",
+    "profile": "Profil",
+    "signOut": "Log keluar",
+    "accountMenu": "Menu akaun",
+    "signingOut": "Sedang log keluar"
+  },
+  "theme": {
+    "toLight": "Tukar ke tema cerah",
+    "toDark": "Tukar ke tema gelap",
+    "light": "Cerah",
+    "dark": "Gelap",
+    "system": "Ikut peranti"
+  },
+  "settings": {
+    "title": "Tetapan",
+    "subtitle": "Akaun, keutamaan dan data anda.",
+    "profile": {
+      "title": "Profil",
+      "description": "Cara anda dipaparkan dalam aplikasi",
+      "name": "Nama",
+      "namePlaceholder": "Nama anda",
+      "timezone": "Zon waktu",
+      "timezoneHelp": "Setiap rentetan hari, sasaran harian dan senarai muraja'ah dikira mengikut hari tempatan anda. Kesilapan di sini biasanya menjadi punca rentetan hari kelihatan terputus pada waktu pagi.",
+      "save": "Simpan perubahan",
+      "saving": "Menyimpan",
+      "saved": "Profil dikemas kini."
+    },
+    "language": {
+      "title": "Bahasa",
+      "description": "Bahasa antara muka",
+      "label": "Bahasa",
+      "help": "Bahasa Malaysia meliputi navigasi, tetapan dan log masuk. Skrin lain sedang diterjemah dan kekal dalam bahasa Inggeris sementara itu.",
+      "changed": "Bahasa dikemas kini."
+    },
+    "appearance": {
+      "title": "Penampilan",
+      "description": "Cerah, gelap, atau ikut peranti anda",
+      "help": "Disimpan pada peranti ini supaya tema betul digunakan sebelum paparan pertama. Ia tidak disegerakkan antara peranti."
+    },
+    "reminders": {
+      "title": "Peringatan",
+      "description": "Peringatan harian untuk muraja'ah anda",
+      "enable": "Peringatan harian",
+      "time": "Waktu",
+      "timeHelp": "Mengikut zon waktu tempatan anda.",
+      "pending": "Peringatan disimpan tetapi belum dihantar — pemberitahuan tolak akan datang dalam keluaran akan datang.",
+      "saved": "Peringatan dikemas kini."
+    },
+    "data": {
+      "title": "Data anda",
+      "description": "Semua yang disimpan oleh aplikasi tentang anda",
+      "export": "Muat turun data saya",
+      "exporting": "Menyediakan",
+      "exportHelp": "Fail JSON yang mengandungi profil, rekod hafazan, sejarah muraja'ah, pelan dan sasaran anda. Data rujukan al-Quran dikecualikan kerana ia sama untuk semua orang.",
+      "exported": "Muat turun dimulakan."
+    },
+    "danger": {
+      "title": "Hapus akaun",
+      "description": "Kekal, dan serta-merta",
+      "warning": "Tindakan ini menghapuskan akaun anda dan setiap rekod yang berkaitan: hafazan, sejarah muraja'ah, pelan, sasaran dan catatan. Ia tidak boleh dibatalkan dan tiada tempoh pemulihan.",
+      "exportFirst": "Muat turun data anda dahulu jika anda ingin menyimpannya.",
+      "confirmLab": "Taip {phrase} untuk mengesahkan",
+      "confirmPhrase": "hapus akaun saya",
+      "delete": "Hapus akaun saya",
+      "deleting": "Menghapuskan"
+    }
+  },
+  "auth": {
+    "signIn": "Log masuk",
+    "signInSubtitle": "Sambung dari tempat anda berhenti.",
+    "signUp": "Daftar akaun anda",
+    "signUpSubtitle": "Sediakan pelan hafazan anda dalam beberapa minit.",
+    "email": "E-mel",
+    "password": "Kata laluan",
+    "name": "Nama",
+    "forgotPassword": "Lupa kata laluan?",
+    "newHere": "Baru di sini?",
+    "createAccount": "Daftar akaun",
+    "haveAccount": "Sudah mempunyai akaun?",
+    "continueWithGoogle": "Teruskan dengan Google",
+    "signInWithGoogle": "Log masuk dengan Google",
+    "signUpWithGoogle": "Daftar dengan Google",
+    "or": "atau"
+  },
+  "common": {
+    "cancel": "Batal",
+    "save": "Simpan",
+    "loading": "Memuatkan"
+  },
+  "offline": {
+    "offline": "Anda di luar talian. Apa sahaja yang direkodkan disimpan pada peranti ini dan dihantar apabila anda bersambung semula.",
+    "offlineWithQueue": "Luar talian · {count} perubahan menunggu untuk disegerakkan",
+    "queued": "{count} perubahan menunggu untuk disegerakkan",
+    "syncing": "Menyegerakkan perubahan anda",
+    "retry": "Cuba sekarang",
+    "title": "Anda di luar talian",
+    "body": "Halaman ini belum pernah dibuka semasa dalam talian, jadi tiada salinan tersimpan untuk dipaparkan. Apa yang anda rekodkan selamat pada peranti ini dan akan disegerakkan apabila anda bersambung semula.",
+    "backOnline": "Cuba lagi"
+  }
+}

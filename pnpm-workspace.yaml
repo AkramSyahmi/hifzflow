@@ -1,0 +1,7 @@
+# Explicit allow-list of packages permitted to run install scripts.
+# pnpm blocks lifecycle scripts by default; every entry here is a deliberate
+# supply-chain decision. Regenerate with `pnpm approve-builds`.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
