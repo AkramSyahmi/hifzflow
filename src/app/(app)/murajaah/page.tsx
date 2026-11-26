@@ -200,7 +200,7 @@ export default async function MurajaahPage() {
                 ? 'A scheduled rest day'
                 : queue.length === 0
                   ? 'Nothing scheduled'
-                  : `${done} of ${queue.length} done · rate each page as you finish it`}
+                  : `${done} of ${queue.length} done`}
             </CardDescription>
           </div>
           {queue.length > 0 ? (

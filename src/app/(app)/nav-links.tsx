@@ -43,8 +43,8 @@ export function NavLinks({
               linkClassName,
               'transition-colors',
               isActive
-                ? 'bg-accent font-medium text-foreground'
-                : 'text-muted-foreground hover:text-foreground'
+                ? 'bg-foreground/15 font-semibold text-foreground'
+                : 'text-foreground/85 hover:bg-foreground/10 hover:text-foreground'
             )}
           >
             {link.label}

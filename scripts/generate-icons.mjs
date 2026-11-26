@@ -16,19 +16,33 @@ import sharp from 'sharp';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'public', 'icons');
 
-/** Brand green, matching --primary in the light palette. */
-const GREEN = '#1f7a52';
+/** Roof teal and brass sunlight, matching --roof and --sun in the light palette. */
+const TEAL = '#16767a';
+const SUN = '#e3b04b';
+
+/**
+ * One breeze block: a concrete square with a quatrefoil opening, sunlight
+ * showing through. Same geometry as LogoMark in src/components/brand/logo.tsx.
+ */
+const blockMark = (block) => `
+  <defs>
+    <mask id="b">
+      <rect width="24" height="24" fill="#fff"/>
+      <circle cx="12" cy="7.6" r="3.6" fill="#000"/>
+      <circle cx="12" cy="16.4" r="3.6" fill="#000"/>
+      <circle cx="7.6" cy="12" r="3.6" fill="#000"/>
+      <circle cx="16.4" cy="12" r="3.6" fill="#000"/>
+    </mask>
+  </defs>
+  <rect x="3" y="3" width="18" height="18" fill="${SUN}"/>
+  <rect x="2" y="2" width="20" height="20" fill="${block}" mask="url(#b)"/>`;
 
 /**
  * The mark on its own, transparent. Used for the favicon and any context that
  * supplies its own background.
  */
-const markSvg = (size, colour) => `
-<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24">
-  <rect x="3" y="4"  width="18"  height="2.6" rx="1.3" fill="${colour}"/>
-  <rect x="3" y="9"  width="18"  height="2.6" rx="1.3" fill="${colour}" opacity="0.7"/>
-  <rect x="3" y="14" width="12"  height="2.6" rx="1.3" fill="${colour}" opacity="0.42"/>
-  <rect x="3" y="19" width="6.5" height="2.6" rx="1.3" fill="${colour}" opacity="0.22"/>
+const markSvg = (size) => `
+<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24">${blockMark(TEAL)}
 </svg>`;
 
 /**
@@ -45,12 +59,8 @@ const tileSvg = (size, { maskable }) => {
 
   return `
 <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-  <rect width="${size}" height="${size}" rx="${radius}" fill="${GREEN}"/>
-  <g transform="translate(${offset} ${offset}) scale(${markSize / 24})">
-    <rect x="3" y="4"  width="18"  height="2.6" rx="1.3" fill="#ffffff"/>
-    <rect x="3" y="9"  width="18"  height="2.6" rx="1.3" fill="#ffffff" opacity="0.72"/>
-    <rect x="3" y="14" width="12"  height="2.6" rx="1.3" fill="#ffffff" opacity="0.46"/>
-    <rect x="3" y="19" width="6.5" height="2.6" rx="1.3" fill="#ffffff" opacity="0.26"/>
+  <rect width="${size}" height="${size}" rx="${radius}" fill="${TEAL}"/>
+  <g transform="translate(${offset} ${offset}) scale(${markSize / 24})">${blockMark('#f3f6f4')}
   </g>
 </svg>`;
 };
@@ -79,7 +89,7 @@ for (const target of targets) {
   console.log(`  ${target.file}  ${target.size}x${target.size}`);
 }
 
-writeFileSync(join(OUT, 'icon.svg'), markSvg(24, GREEN).trim(), 'utf8');
+writeFileSync(join(OUT, 'icon.svg'), markSvg(24).trim(), 'utf8');
 console.log('  icon.svg');
 
 const favicon = await sharp(Buffer.from(tileSvg(48, { maskable: false })))

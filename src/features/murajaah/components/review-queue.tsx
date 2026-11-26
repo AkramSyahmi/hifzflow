@@ -180,13 +180,23 @@ export function ReviewQueue({ items }: { items: readonly QueueItem[] }) {
   const remaining = optimisticItems.filter(
     (item) => item.completed_at === null
   ).length;
+  const next = optimisticItems.find((item) => item.completed_at === null);
 
   return (
     <div>
-      {remaining > 0 ? (
-        <p className="text-xs text-muted-foreground">
-          Ratings: 1 is very shaky, 5 is fluent.
-        </p>
+      {next ? (
+        // The one thing to do now, at a size readable from a rehal.
+        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 pb-2">
+          <p className="flex items-baseline gap-3">
+            <span className="text-xs text-muted-foreground">Next</span>
+            <span className="tabular font-display text-5xl leading-none font-bold text-primary">
+              {next.page_number}
+            </span>
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Ratings: 1 is very shaky, 5 is fluent.
+          </p>
+        </div>
       ) : null}
       <ul className="divide-y divide-border">
         {optimisticItems.map((item) => (

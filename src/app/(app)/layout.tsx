@@ -42,42 +42,54 @@ export default async function AppLayout({
 
   return (
     <div className="flex min-h-svh flex-col">
-      <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur-sm">
-        <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-6">
-          <div className="flex items-center gap-6">
-            <Link href="/dashboard">
-              <Logo />
-            </Link>
+      {/* The roof: a teal band with a folded-plate eave along its edge. The
+          `dark` class keeps the controls inside it on light-on-teal colours
+          in both themes. */}
+      <header className="sticky top-0 z-40">
+        <div className="dark bg-roof text-foreground">
+          <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-6">
+            <div className="flex items-center gap-6">
+              <Link href="/dashboard">
+                <Logo />
+              </Link>
+              <NavLinks
+                links={links}
+                className="hidden items-center gap-1 md:flex"
+                linkClassName="rounded-sm px-2.5 py-1 text-sm"
+              />
+            </div>
+            <div className="flex items-center gap-1">
+              <ThemeToggle />
+              <UserMenu
+                displayName={profile?.display_name ?? null}
+                email={user.email ?? ''}
+                avatarUrl={profile?.avatar_url ?? null}
+                initials={initialsFrom(
+                  profile?.display_name ?? null,
+                  user.email
+                )}
+              />
+            </div>
+          </div>
+
+          {/* Below the breakpoint the header has no room for six links, so
+              navigation moves to a scrollable strip rather than a hamburger:
+              one tap instead of two, and the destinations stay visible. */}
+          {/* All five destinations fit at phone width in both languages (about
+              43 characters either way) at 12px; the strip only scrolls on
+              screens narrower than that. */}
+          <div className="md:hidden">
             <NavLinks
               links={links}
-              className="hidden items-center gap-1 md:flex"
-              linkClassName="rounded-md px-2 py-1 text-sm"
-            />
-          </div>
-          <div className="flex items-center gap-1">
-            <ThemeToggle />
-            <UserMenu
-              displayName={profile?.display_name ?? null}
-              email={user.email ?? ''}
-              avatarUrl={profile?.avatar_url ?? null}
-              initials={initialsFrom(profile?.display_name ?? null, user.email)}
+              className="mx-auto flex w-full max-w-6xl justify-between overflow-x-auto px-3 pb-2"
+              linkClassName="shrink-0 rounded-sm px-1.5 py-1.5 text-xs whitespace-nowrap"
             />
           </div>
         </div>
+        <div aria-hidden="true" className="eave bg-roof" />
       </header>
 
       <OfflineBanner />
-
-      {/* Below the breakpoint the header has no room for six links, so
-          navigation moves to a scrollable strip rather than a hamburger: one
-          tap instead of two, and the destinations stay visible. */}
-      <div className="border-b md:hidden">
-        <NavLinks
-          links={links}
-          className="mx-auto flex w-full max-w-6xl gap-1 overflow-x-auto px-4 py-2"
-          linkClassName="shrink-0 rounded-md px-2.5 py-1 text-sm whitespace-nowrap"
-        />
-      </div>
 
       <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
         <PageTransition>{children}</PageTransition>

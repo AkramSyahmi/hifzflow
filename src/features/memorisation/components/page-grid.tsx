@@ -130,7 +130,7 @@ export function PageGrid({
                 </span>
               </header>
 
-              <div className="flex flex-wrap gap-1">
+              <div className="flex flex-wrap gap-0.5">
                 {group.pages.map((page) => {
                   const level = densityLevel(
                     page.memorised_ayahs,
@@ -152,20 +152,30 @@ export function PageGrid({
                             page.ayah_count
                           )}`}
                           className={cn(
-                            'relative flex size-8 items-center justify-center rounded-md text-[11px] font-medium transition-all',
-                            'outline-none focus-visible:ring-2 focus-visible:ring-ring/60',
-                            'hover:ring-2 hover:ring-foreground/25',
-                            densityClass(level),
+                            // A breeze block: concrete frame, the page's
+                            // memorisation showing through the opening.
+                            'relative flex size-9 items-center justify-center rounded-[2px] bg-block text-[11px] font-semibold transition-all sm:size-8',
+                            'outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                            'hover:ring-2 hover:ring-foreground/30',
                             level >= 3
                               ? 'text-primary-foreground'
-                              : 'text-foreground/70',
+                              : 'text-foreground/75',
                             isPending && 'opacity-60'
                           )}
                         >
+                          <span
+                            aria-hidden="true"
+                            className={cn(
+                              'breeze-opening absolute inset-0 transition-colors',
+                              densityClass(level)
+                            )}
+                          />
                           {isPending ? (
-                            <Loader2 className="size-3 animate-spin" />
+                            <Loader2 className="relative size-3 animate-spin" />
                           ) : (
-                            <span className="tabular">{page.page_number}</span>
+                            <span className="tabular relative">
+                              {page.page_number}
+                            </span>
                           )}
                         </button>
                       </TooltipTrigger>

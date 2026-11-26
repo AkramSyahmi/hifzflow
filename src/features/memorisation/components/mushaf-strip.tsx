@@ -66,7 +66,7 @@ export function MushafStrip({
           .map((marker) => (
             <span
               key={marker.juz}
-              className="absolute top-0 -translate-x-1/2 font-mono text-[10px] text-muted-foreground"
+              className="tabular absolute top-0 -translate-x-1/2 text-[10px] text-muted-foreground"
               style={{
                 left: `${Math.min(98, Math.max(2, ((marker.page - 1) / total) * 100))}%`,
               }}
@@ -96,10 +96,14 @@ export function DensityLegend({ className }: { className?: string }) {
       <span>None</span>
       <span className="flex gap-0.5">
         {([0, 1, 2, 3, 4] as const).map((level) => (
-          <span
-            key={level}
-            className={cn('size-3 rounded-[3px]', densityClass(level))}
-          />
+          <span key={level} className="relative size-3.5 bg-block">
+            <span
+              className={cn(
+                'breeze-opening absolute inset-0',
+                densityClass(level)
+              )}
+            />
+          </span>
         ))}
       </span>
       <span>Complete</span>

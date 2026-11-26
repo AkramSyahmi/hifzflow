@@ -1,11 +1,12 @@
+import { HifzScreen } from '@/components/brand/hifz-screen';
 import { ThemeToggle } from '@/components/theme-toggle';
 
 /**
  * Auth shell.
  *
- * Single centred column rather than the usual split-screen with a decorative
- * panel: there is nothing true to put in that panel yet, and an empty gradient
- * would be filler. Revisit once there are real product screenshots.
+ * The form column, and on wide screens the roof panel from the landing page:
+ * the example breeze-block screen shows what the account is for. Below lg
+ * the panel is dropped so the form is the whole screen on a phone.
  */
 export default function AuthLayout({
   children,
@@ -13,11 +14,19 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative flex min-h-svh flex-col items-center justify-center px-6 py-12">
-      <div className="absolute top-4 right-4">
-        <ThemeToggle />
+    <div className="grid min-h-svh lg:grid-cols-2">
+      <div className="relative flex flex-col items-center justify-center px-6 py-12">
+        <div className="absolute top-4 right-4">
+          <ThemeToggle />
+        </div>
+        {children}
       </div>
-      {children}
+
+      <div className="dark hidden lg:flex lg:flex-col" aria-hidden="true">
+        <div className="flex flex-1 items-center justify-center bg-roof px-14 py-12 text-foreground">
+          <HifzScreen className="w-full max-w-[30rem]" />
+        </div>
+      </div>
     </div>
   );
 }

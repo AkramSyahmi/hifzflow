@@ -2,7 +2,7 @@ import { headers } from 'next/headers';
 import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
-import { Inter, Instrument_Sans, Noto_Naskh_Arabic } from 'next/font/google';
+import { Archivo, Noto_Naskh_Arabic } from 'next/font/google';
 
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
@@ -13,15 +13,11 @@ import { cn } from '@/lib/utils';
 
 import './globals.css';
 
-const inter = Inter({
+/** One family at two widths: expanded for display, normal for running text. */
+const archivo = Archivo({
   subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const instrumentSans = Instrument_Sans({
-  subsets: ['latin'],
-  variable: '--font-instrument-sans',
+  axes: ['wdth'],
+  variable: '--font-archivo',
   display: 'swap',
 });
 
@@ -87,8 +83,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#131314' },
+    { media: '(prefers-color-scheme: light)', color: '#f3f6f4' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f1c1d' },
   ],
   width: 'device-width',
   initialScale: 1,
@@ -113,8 +109,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body
         className={cn(
-          inter.variable,
-          instrumentSans.variable,
+          archivo.variable,
           notoNaskhArabic.variable,
           'min-h-svh font-sans'
         )}

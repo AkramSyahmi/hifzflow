@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-26T08:24:24.812Z",
+  "title": "Design System: HifzFlow",
+  "extensions": {
+    "colorMeta": {
+      "terrazzo": {
+        "role": "neutral",
+        "displayName": "Terrazzo",
+        "canonical": "oklch(0.968 0.005 175)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 175)",
+          "oklch(0.27 0.003 175)",
+          "oklch(0.39 0.005 175)",
+          "oklch(0.51 0.005 175)",
+          "oklch(0.63 0.005 175)",
+          "oklch(0.75 0.005 175)",
+          "oklch(0.86 0.003 175)",
+          "oklch(0.95 0.001 175)"
+        ]
+      },
+      "terrazzo-card": {
+        "role": "neutral",
+        "displayName": "Terrazzo Card",
+        "canonical": "oklch(0.992 0.003 175)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 175)",
+          "oklch(0.27 0.002 175)",
+          "oklch(0.39 0.003 175)",
+          "oklch(0.51 0.003 175)",
+          "oklch(0.63 0.003 175)",
+          "oklch(0.75 0.003 175)",
+          "oklch(0.86 0.002 175)",
+          "oklch(0.95 0.001 175)"
+        ]
+      },
+      "terrazzo-wash": {
+        "role": "neutral",
+        "displayName": "Terrazzo Wash",
+        "canonical": "oklch(0.93 0.008 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.005 180)",
+          "oklch(0.39 0.008 180)",
+          "oklch(0.51 0.008 180)",
+          "oklch(0.63 0.008 180)",
+          "oklch(0.75 0.008 180)",
+          "oklch(0.86 0.004 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "terrazzo-accent": {
+        "role": "neutral",
+        "displayName": "Terrazzo Accent",
+        "canonical": "oklch(0.925 0.012 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.008 180)",
+          "oklch(0.39 0.012 180)",
+          "oklch(0.51 0.012 180)",
+          "oklch(0.63 0.012 180)",
+          "oklch(0.75 0.012 180)",
+          "oklch(0.86 0.007 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "teal-black-ink": {
+        "role": "neutral",
+        "displayName": "Teal-Black Ink",
+        "canonical": "oklch(0.23 0.022 195)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 195)",
+          "oklch(0.27 0.015 195)",
+          "oklch(0.39 0.022 195)",
+          "oklch(0.51 0.022 195)",
+          "oklch(0.63 0.022 195)",
+          "oklch(0.75 0.022 195)",
+          "oklch(0.86 0.012 195)",
+          "oklch(0.95 0.004 195)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.49 0.018 195)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 195)",
+          "oklch(0.27 0.012 195)",
+          "oklch(0.39 0.018 195)",
+          "oklch(0.51 0.018 195)",
+          "oklch(0.63 0.018 195)",
+          "oklch(0.75 0.018 195)",
+          "oklch(0.86 0.010 195)",
+          "oklch(0.95 0.004 195)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.885 0.01 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.007 180)",
+          "oklch(0.39 0.010 180)",
+          "oklch(0.51 0.010 180)",
+          "oklch(0.63 0.010 180)",
+          "oklch(0.75 0.010 180)",
+          "oklch(0.86 0.006 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "input-stroke": {
+        "role": "neutral",
+        "displayName": "Input Stroke",
+        "canonical": "oklch(0.85 0.012 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.008 180)",
+          "oklch(0.39 0.012 180)",
+          "oklch(0.51 0.012 180)",
+          "oklch(0.63 0.012 180)",
+          "oklch(0.75 0.012 180)",
+          "oklch(0.86 0.007 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Roof Mosaic Teal",
+        "canonical": "oklch(0.45 0.075 195)",
+        "tonalRamp": [
+          "oklch(0.15 0.015 195)",
+          "oklch(0.27 0.051 195)",
+          "oklch(0.39 0.075 195)",
+          "oklch(0.51 0.075 195)",
+          "oklch(0.63 0.075 195)",
+          "oklch(0.75 0.075 195)",
+          "oklch(0.86 0.042 195)",
+          "oklch(0.95 0.015 195)"
+        ]
+      },
+      "primary-foreground": {
+        "role": "primary",
+        "displayName": "Primary Foreground",
+        "canonical": "oklch(0.985 0.005 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 180)",
+          "oklch(0.27 0.003 180)",
+          "oklch(0.39 0.005 180)",
+          "oklch(0.51 0.005 180)",
+          "oklch(0.63 0.005 180)",
+          "oklch(0.75 0.005 180)",
+          "oklch(0.86 0.003 180)",
+          "oklch(0.95 0.001 180)"
+        ]
+      },
+      "roof": {
+        "role": "primary",
+        "displayName": "Roof Band Teal",
+        "canonical": "oklch(0.5 0.085 192)",
+        "tonalRamp": [
+          "oklch(0.15 0.017 192)",
+          "oklch(0.27 0.058 192)",
+          "oklch(0.39 0.085 192)",
+          "oklch(0.51 0.085 192)",
+          "oklch(0.63 0.085 192)",
+          "oklch(0.75 0.085 192)",
+          "oklch(0.86 0.048 192)",
+          "oklch(0.95 0.017 192)"
+        ]
+      },
+      "roof-night": {
+        "role": "primary",
+        "displayName": "Night Roof",
+        "canonical": "oklch(0.33 0.055 196)",
+        "tonalRamp": [
+          "oklch(0.15 0.011 196)",
+          "oklch(0.27 0.037 196)",
+          "oklch(0.39 0.055 196)",
+          "oklch(0.51 0.055 196)",
+          "oklch(0.63 0.055 196)",
+          "oklch(0.75 0.055 196)",
+          "oklch(0.86 0.031 196)",
+          "oklch(0.95 0.011 196)"
+        ]
+      },
+      "sun": {
+        "role": "secondary",
+        "displayName": "Brass Sun",
+        "canonical": "oklch(0.8 0.13 82)",
+        "tonalRamp": [
+          "oklch(0.15 0.026 82)",
+          "oklch(0.27 0.088 82)",
+          "oklch(0.39 0.130 82)",
+          "oklch(0.51 0.130 82)",
+          "oklch(0.63 0.130 82)",
+          "oklch(0.75 0.130 82)",
+          "oklch(0.86 0.073 82)",
+          "oklch(0.95 0.026 82)"
+        ]
+      },
+      "block": {
+        "role": "neutral",
+        "displayName": "Cast Concrete",
+        "canonical": "oklch(0.86 0.012 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.008 180)",
+          "oklch(0.39 0.012 180)",
+          "oklch(0.51 0.012 180)",
+          "oklch(0.63 0.012 180)",
+          "oklch(0.75 0.012 180)",
+          "oklch(0.86 0.007 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "destructive": {
+        "role": "tertiary",
+        "displayName": "Clay",
+        "canonical": "oklch(0.53 0.16 30)",
+        "tonalRamp": [
+          "oklch(0.15 0.032 30)",
+          "oklch(0.27 0.109 30)",
+          "oklch(0.39 0.160 30)",
+          "oklch(0.51 0.160 30)",
+          "oklch(0.63 0.160 30)",
+          "oklch(0.75 0.160 30)",
+          "oklch(0.86 0.090 30)",
+          "oklch(0.95 0.032 30)"
+        ]
+      },
+      "state-new": {
+        "role": "state",
+        "displayName": "State New",
+        "canonical": "oklch(0.915 0.008 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.005 180)",
+          "oklch(0.39 0.008 180)",
+          "oklch(0.51 0.008 180)",
+          "oklch(0.63 0.008 180)",
+          "oklch(0.75 0.008 180)",
+          "oklch(0.86 0.004 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "state-new-foreground": {
+        "role": "state",
+        "displayName": "State New Foreground",
+        "canonical": "oklch(0.42 0.02 195)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 195)",
+          "oklch(0.27 0.014 195)",
+          "oklch(0.39 0.020 195)",
+          "oklch(0.51 0.020 195)",
+          "oklch(0.63 0.020 195)",
+          "oklch(0.75 0.020 195)",
+          "oklch(0.86 0.011 195)",
+          "oklch(0.95 0.004 195)"
+        ]
+      },
+      "state-learning": {
+        "role": "state",
+        "displayName": "State Learning",
+        "canonical": "oklch(0.86 0.05 225)",
+        "tonalRamp": [
+          "oklch(0.15 0.010 225)",
+          "oklch(0.27 0.034 225)",
+          "oklch(0.39 0.050 225)",
+          "oklch(0.51 0.050 225)",
+          "oklch(0.63 0.050 225)",
+          "oklch(0.75 0.050 225)",
+          "oklch(0.86 0.028 225)",
+          "oklch(0.95 0.010 225)"
+        ]
+      },
+      "state-learning-foreground": {
+        "role": "state",
+        "displayName": "State Learning Foreground",
+        "canonical": "oklch(0.3 0.06 235)",
+        "tonalRamp": [
+          "oklch(0.15 0.012 235)",
+          "oklch(0.27 0.041 235)",
+          "oklch(0.39 0.060 235)",
+          "oklch(0.51 0.060 235)",
+          "oklch(0.63 0.060 235)",
+          "oklch(0.75 0.060 235)",
+          "oklch(0.86 0.034 235)",
+          "oklch(0.95 0.012 235)"
+        ]
+      },
+      "state-memorised": {
+        "role": "state",
+        "displayName": "State Memorised",
+        "canonical": "oklch(0.54 0.09 182)",
+        "tonalRamp": [
+          "oklch(0.15 0.018 182)",
+          "oklch(0.27 0.061 182)",
+          "oklch(0.39 0.090 182)",
+          "oklch(0.51 0.090 182)",
+          "oklch(0.63 0.090 182)",
+          "oklch(0.75 0.090 182)",
+          "oklch(0.86 0.050 182)",
+          "oklch(0.95 0.018 182)"
+        ]
+      },
+      "state-memorised-foreground": {
+        "role": "state",
+        "displayName": "State Memorised Foreground",
+        "canonical": "oklch(0.985 0.005 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 180)",
+          "oklch(0.27 0.003 180)",
+          "oklch(0.39 0.005 180)",
+          "oklch(0.51 0.005 180)",
+          "oklch(0.63 0.005 180)",
+          "oklch(0.75 0.005 180)",
+          "oklch(0.86 0.003 180)",
+          "oklch(0.95 0.001 180)"
+        ]
+      },
+      "state-weak": {
+        "role": "state",
+        "displayName": "State Weak",
+        "canonical": "oklch(0.78 0.13 80)",
+        "tonalRamp": [
+          "oklch(0.15 0.026 80)",
+          "oklch(0.27 0.088 80)",
+          "oklch(0.39 0.130 80)",
+          "oklch(0.51 0.130 80)",
+          "oklch(0.63 0.130 80)",
+          "oklch(0.75 0.130 80)",
+          "oklch(0.86 0.073 80)",
+          "oklch(0.95 0.026 80)"
+        ]
+      },
+      "state-weak-foreground": {
+        "role": "state",
+        "displayName": "State Weak Foreground",
+        "canonical": "oklch(0.27 0.05 70)",
+        "tonalRamp": [
+          "oklch(0.15 0.010 70)",
+          "oklch(0.27 0.034 70)",
+          "oklch(0.39 0.050 70)",
+          "oklch(0.51 0.050 70)",
+          "oklch(0.63 0.050 70)",
+          "oklch(0.75 0.050 70)",
+          "oklch(0.86 0.028 70)",
+          "oklch(0.95 0.010 70)"
+        ]
+      },
+      "state-overdue": {
+        "role": "tertiary",
+        "displayName": "Clay Overdue",
+        "canonical": "oklch(0.53 0.15 35)",
+        "tonalRamp": [
+          "oklch(0.15 0.030 35)",
+          "oklch(0.27 0.102 35)",
+          "oklch(0.39 0.150 35)",
+          "oklch(0.51 0.150 35)",
+          "oklch(0.63 0.150 35)",
+          "oklch(0.75 0.150 35)",
+          "oklch(0.86 0.084 35)",
+          "oklch(0.95 0.030 35)"
+        ]
+      },
+      "state-overdue-foreground": {
+        "role": "tertiary",
+        "displayName": "State Overdue Foreground",
+        "canonical": "oklch(0.985 0.005 35)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 35)",
+          "oklch(0.27 0.003 35)",
+          "oklch(0.39 0.005 35)",
+          "oklch(0.51 0.005 35)",
+          "oklch(0.63 0.005 35)",
+          "oklch(0.75 0.005 35)",
+          "oklch(0.86 0.003 35)",
+          "oklch(0.95 0.001 35)"
+        ]
+      },
+      "hifz-0": {
+        "role": "state",
+        "displayName": "Hifz 0",
+        "canonical": "oklch(0.915 0.008 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.005 180)",
+          "oklch(0.39 0.008 180)",
+          "oklch(0.51 0.008 180)",
+          "oklch(0.63 0.008 180)",
+          "oklch(0.75 0.008 180)",
+          "oklch(0.86 0.004 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "hifz-1": {
+        "role": "state",
+        "displayName": "Hifz 1",
+        "canonical": "oklch(0.85 0.05 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.010 180)",
+          "oklch(0.27 0.034 180)",
+          "oklch(0.39 0.050 180)",
+          "oklch(0.51 0.050 180)",
+          "oklch(0.63 0.050 180)",
+          "oklch(0.75 0.050 180)",
+          "oklch(0.86 0.028 180)",
+          "oklch(0.95 0.010 180)"
+        ]
+      },
+      "hifz-2": {
+        "role": "state",
+        "displayName": "Hifz 2",
+        "canonical": "oklch(0.74 0.08 182)",
+        "tonalRamp": [
+          "oklch(0.15 0.016 182)",
+          "oklch(0.27 0.054 182)",
+          "oklch(0.39 0.080 182)",
+          "oklch(0.51 0.080 182)",
+          "oklch(0.63 0.080 182)",
+          "oklch(0.75 0.080 182)",
+          "oklch(0.86 0.045 182)",
+          "oklch(0.95 0.016 182)"
+        ]
+      },
+      "hifz-3": {
+        "role": "state",
+        "displayName": "Hifz 3",
+        "canonical": "oklch(0.6 0.09 185)",
+        "tonalRamp": [
+          "oklch(0.15 0.018 185)",
+          "oklch(0.27 0.061 185)",
+          "oklch(0.39 0.090 185)",
+          "oklch(0.51 0.090 185)",
+          "oklch(0.63 0.090 185)",
+          "oklch(0.75 0.090 185)",
+          "oklch(0.86 0.050 185)",
+          "oklch(0.95 0.018 185)"
+        ]
+      },
+      "hifz-4": {
+        "role": "state",
+        "displayName": "Hifz 4",
+        "canonical": "oklch(0.45 0.075 195)",
+        "tonalRamp": [
+          "oklch(0.15 0.015 195)",
+          "oklch(0.27 0.051 195)",
+          "oklch(0.39 0.075 195)",
+          "oklch(0.51 0.075 195)",
+          "oklch(0.63 0.075 195)",
+          "oklch(0.75 0.075 195)",
+          "oklch(0.86 0.042 195)",
+          "oklch(0.95 0.015 195)"
+        ]
+      },
+      "light-manzil": {
+        "role": "tertiary",
+        "displayName": "Turquoise Light",
+        "canonical": "oklch(0.88 0.09 178)",
+        "tonalRamp": [
+          "oklch(0.15 0.018 178)",
+          "oklch(0.27 0.061 178)",
+          "oklch(0.39 0.090 178)",
+          "oklch(0.51 0.090 178)",
+          "oklch(0.63 0.090 178)",
+          "oklch(0.75 0.090 178)",
+          "oklch(0.86 0.050 178)",
+          "oklch(0.95 0.018 178)"
+        ]
+      },
+      "light-sabqi": {
+        "role": "tertiary",
+        "displayName": "Sky Light",
+        "canonical": "oklch(0.84 0.07 232)",
+        "tonalRamp": [
+          "oklch(0.15 0.014 232)",
+          "oklch(0.27 0.048 232)",
+          "oklch(0.39 0.070 232)",
+          "oklch(0.51 0.070 232)",
+          "oklch(0.63 0.070 232)",
+          "oklch(0.75 0.070 232)",
+          "oklch(0.86 0.039 232)",
+          "oklch(0.95 0.014 232)"
+        ]
+      },
+      "night-ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "canonical": "oklch(0.19 0.018 200)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 200)",
+          "oklch(0.27 0.012 200)",
+          "oklch(0.39 0.018 200)",
+          "oklch(0.51 0.018 200)",
+          "oklch(0.63 0.018 200)",
+          "oklch(0.75 0.018 200)",
+          "oklch(0.86 0.010 200)",
+          "oklch(0.95 0.004 200)"
+        ]
+      },
+      "night-card": {
+        "role": "neutral",
+        "displayName": "Night Card",
+        "canonical": "oklch(0.225 0.02 200)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 200)",
+          "oklch(0.27 0.014 200)",
+          "oklch(0.39 0.020 200)",
+          "oklch(0.51 0.020 200)",
+          "oklch(0.63 0.020 200)",
+          "oklch(0.75 0.020 200)",
+          "oklch(0.86 0.011 200)",
+          "oklch(0.95 0.004 200)"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "oklch(0.95 0.008 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 180)",
+          "oklch(0.27 0.005 180)",
+          "oklch(0.39 0.008 180)",
+          "oklch(0.51 0.008 180)",
+          "oklch(0.63 0.008 180)",
+          "oklch(0.75 0.008 180)",
+          "oklch(0.86 0.004 180)",
+          "oklch(0.95 0.002 180)"
+        ]
+      },
+      "night-primary": {
+        "role": "neutral",
+        "displayName": "Night Turquoise",
+        "canonical": "oklch(0.74 0.1 180)",
+        "tonalRamp": [
+          "oklch(0.15 0.020 180)",
+          "oklch(0.27 0.068 180)",
+          "oklch(0.39 0.100 180)",
+          "oklch(0.51 0.100 180)",
+          "oklch(0.63 0.100 180)",
+          "oklch(0.75 0.100 180)",
+          "oklch(0.86 0.056 180)",
+          "oklch(0.95 0.020 180)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Monumental Numeral",
+        "purpose": "The page numeral on roof fields; the review queue Next numeral uses it at 3rem in primary teal."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Landing h1, expanded Archivo, balanced wrap."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings on the landing and page headings in the app."
+      },
+      "card-title": {
+        "displayName": "Card Title",
+        "purpose": "Card titles, juz' headings in the grid, defined terms."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanations and running text at normal width."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Card descriptions and list text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Meta, captions, legends, mobile nav. Sentence case."
+      },
+      "arabic": {
+        "displayName": "Arabic",
+        "purpose": "Surah names and Arabic content only, right to left."
+      }
+    },
+    "shadows": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "shadow-xs and shadow-sm: cards, buttons and inputs are flat."
+      },
+      {
+        "name": "floating",
+        "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "purpose": "Menus, popovers and selects only; dialogs use shadow-lg."
+      }
+    ],
+    "motion": [
+      {
+        "name": "page-enter",
+        "value": "180ms ease-out, translateY(4px) to 0 with fade",
+        "purpose": "App route transition."
+      },
+      {
+        "name": "block-light",
+        "value": "700ms colour transition",
+        "purpose": "Breeze-block frames and openings on the roof screen."
+      },
+      {
+        "name": "rotation-step",
+        "value": "6000ms interval",
+        "purpose": "Today's set advances on the landing screen; disabled under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition durations under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary-lg",
+      "description": "Solid teal slab, no shadow. The main action.",
+      "html": "<button class=\"ds-btn-primary\">Create an account</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;height:40px;padding:0 24px;background:var(--primary);color:var(--primary-foreground);border:0;border-radius:2px;font:500 14px/1 var(--font-archivo),ui-sans-serif,system-ui,sans-serif;cursor:pointer;transition:background .15s}.ds-btn-primary:hover{background:color-mix(in oklch,var(--primary) 90%,transparent)}.ds-btn-primary:focus-visible{outline:none;box-shadow:0 0 0 3px color-mix(in oklch,var(--ring) 50%,transparent)}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary actions inside cards.",
+      "html": "<button class=\"ds-btn-outline\">Open murajaah</button>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;height:36px;padding:0 16px;background:var(--background);color:var(--foreground);border:1px solid var(--border);border-radius:2px;font:500 14px/1 var(--font-archivo),ui-sans-serif,system-ui,sans-serif;cursor:pointer;transition:background .15s}.ds-btn-outline:hover{background:var(--accent);color:var(--accent-foreground)}.ds-btn-outline:focus-visible{outline:none;box-shadow:0 0 0 3px color-mix(in oklch,var(--ring) 50%,transparent)}"
+    },
+    {
+      "name": "State Badges",
+      "kind": "chip",
+      "refersTo": "badge-memorised",
+      "description": "Solid state pairs for page status.",
+      "html": "<span class=\"ds-badge ds-badge-mem\">Memorised</span> <span class=\"ds-badge ds-badge-learn\">Sabqi</span> <span class=\"ds-badge ds-badge-weak\">Weak</span>",
+      "css": ".ds-badge{display:inline-flex;padding:2px 8px;border-radius:2px;font:500 12px/1.33 var(--font-archivo),ui-sans-serif,system-ui,sans-serif}.ds-badge-mem{background:var(--state-memorised);color:var(--state-memorised-foreground)}.ds-badge-learn{background:var(--state-learning);color:var(--state-learning-foreground)}.ds-badge-weak{background:var(--state-weak);color:var(--state-weak-foreground)}"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Terrazzo card on the terrazzo floor, hairline edge, flat.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-title\">Today’s murajaah</div><div class=\"ds-card-desc\">1 of 2 done</div></div>",
+      "css": ".ds-card{background:var(--card);color:var(--card-foreground);border:1px solid var(--border);border-radius:2px;padding:24px;max-width:320px}.ds-card-title{font:600 16px/1 var(--font-archivo),ui-sans-serif,system-ui,sans-serif;font-stretch:118%;letter-spacing:-0.025em}.ds-card-desc{margin-top:6px;font-size:14px;color:var(--muted-foreground)}"
+    },
+    {
+      "name": "Roof Navigation",
+      "kind": "nav",
+      "refersTo": "roof-band",
+      "description": "Teal roof band with night-ink links and a pleated eave below.",
+      "html": "<div class=\"ds-roof\"><nav class=\"ds-roof-nav\"><a aria-current=\"page\" href=\"#\">Dashboard</a><a href=\"#\">Memorisation</a><a href=\"#\">Murajaah</a></nav></div><div class=\"ds-eave\"></div>",
+      "css": ".ds-roof{background:var(--roof);height:56px;display:flex;align-items:center;padding:0 24px}.ds-roof-nav{display:flex;gap:4px}.ds-roof-nav a{padding:4px 10px;border-radius:0;font:400 14px/1.4 var(--font-archivo),ui-sans-serif,system-ui,sans-serif;color:oklch(0.95 0.008 180 / 85%);text-decoration:none;transition:background .15s}.ds-roof-nav a:hover{background:oklch(0.95 0.008 180 / 10%);color:oklch(0.95 0.008 180)}.ds-roof-nav a[aria-current=page]{background:oklch(0.95 0.008 180 / 15%);color:oklch(0.95 0.008 180);font-weight:600}.ds-roof-nav a:focus-visible{outline:2px solid oklch(0.74 0.1 180);outline-offset:2px}.ds-eave{height:22px;background:var(--roof);-webkit-mask:conic-gradient(from 111.45deg at top,#000 137.1deg,#0000 0) 0 0/112px 100% repeat-x;mask:conic-gradient(from 111.45deg at top,#000 137.1deg,#0000 0) 0 0/112px 100% repeat-x}"
+    },
+    {
+      "name": "Breeze Block Page Cell",
+      "kind": "custom",
+      "refersTo": "breeze-block",
+      "description": "One mushaf page: concrete frame, quatrefoil opening showing memorisation density.",
+      "html": "<div class=\"ds-blocks\"><button class=\"ds-block\"><span class=\"ds-open\" style=\"background:var(--hifz-0)\"></span><span class=\"ds-num\">1</span></button><button class=\"ds-block\"><span class=\"ds-open\" style=\"background:var(--hifz-2)\"></span><span class=\"ds-num\">2</span></button><button class=\"ds-block ds-lit\"><span class=\"ds-open\" style=\"background:var(--hifz-4)\"></span><span class=\"ds-num\">3</span></button></div>",
+      "css": ".ds-blocks{display:flex;gap:2px}.ds-block{position:relative;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--block);border:0;border-radius:2px;font:600 11px/1 var(--font-archivo),ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:color-mix(in oklch,var(--foreground) 75%,transparent);cursor:pointer;transition:box-shadow .15s}.ds-lit{color:var(--primary-foreground)}.ds-block:hover{box-shadow:0 0 0 2px color-mix(in oklch,var(--foreground) 30%,transparent)}.ds-block:focus-visible{outline:none;box-shadow:0 0 0 2px var(--ring)}.ds-open{position:absolute;inset:0;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='black'%3E%3Ccircle cx='12' cy='7.6' r='3.9'/%3E%3Ccircle cx='12' cy='16.4' r='3.9'/%3E%3Ccircle cx='7.6' cy='12' r='3.9'/%3E%3Ccircle cx='16.4' cy='12' r='3.9'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3C/g%3E%3C/svg%3E\") center/100% 100% no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='black'%3E%3Ccircle cx='12' cy='7.6' r='3.9'/%3E%3Ccircle cx='12' cy='16.4' r='3.9'/%3E%3Ccircle cx='7.6' cy='12' r='3.9'/%3E%3Ccircle cx='16.4' cy='12' r='3.9'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3C/g%3E%3C/svg%3E\") center/100% 100% no-repeat}.ds-num{position:relative}"
+    },
+    {
+      "name": "Rating Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "1 to 5 recitation rating in the review queue.",
+      "html": "<div style=\"display:flex;gap:4px\"><button class=\"ds-rate\">1</button><button class=\"ds-rate\">3</button><button class=\"ds-rate\">5</button></div>",
+      "css": ".ds-rate{width:40px;height:40px;background:transparent;color:var(--foreground);border:1px solid var(--border);border-radius:2px;font:500 14px/1 var(--font-archivo),ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums;cursor:pointer;transition:background .15s,color .15s,border-color .15s}.ds-rate:hover{background:var(--primary);border-color:var(--primary);color:var(--primary-foreground)}.ds-rate:focus-visible{outline:none;box-shadow:0 0 0 2px color-mix(in oklch,var(--ring) 60%,transparent)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Breeze-Block Screen",
+    "overview": "HifzFlow is built from 1960s Malaysian mosque modernism: a terrazzo floor, a roof of teal mosaic with a folded-plate edge, and perforated concrete breeze-block screens that let light through. The whole mushaf is one such screen. Each of the 604 pages is one block, and a memorised page lets light through its quatrefoil opening. The brand mark is a single block with brass sunlight behind it, so the logo, the tracking grid and the landing screen are the same unit at different sizes.\n\nStructure stays in cool terrazzo neutrals (green-grey, never cream) and teal-black ink. Teal is the committed brand field: the roof band over every signed-in page, and full-height roof fields on the landing and auth pages. Inside a roof field, text and controls use the night palette, so light-on-teal reads the same in both themes. Depth comes from flat overlapping planes and hairline rules. There are no soft shadows on cards or controls, and no gradients.\n\nDensity is operational: the app is a daily tool used on phones, so the world lives in tokens, the roof, the page grid and the today panel, not in decoration. Display type is Archivo pulled wide, like lettering cast in concrete. Running text stays at normal width.",
+    "keyCharacteristics": [
+      "Terrazzo ground, roof-teal field, turquoise light, brass sun, clay for overdue.",
+      "One unit, the breeze block, reused for logo, page grid, legends and the landing screen.",
+      "A folded-plate pleat strip as the roof line under the app header and over the landing field.",
+      "Sharp corners (2px), hairline borders, flat planes, no card or control shadows.",
+      "Archivo at two widths: expanded (118%) for display, normal for UI and reading.",
+      "Tabular figures on every number that counts pages, days or ayahs."
+    ],
+    "rules": [
+      {
+        "name": "The Light-Through Rule",
+        "body": "Turquoise and teal light inside a block means memorised. Never use the density ramp or `state-memorised` for decoration. A lit block is a claim about the user's hifz.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Status Source Rule",
+        "body": "Status colours come only from the `state-*` and `hifz-*` tokens. A page never invents its own status colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Roof Inverts Rule",
+        "body": "Anything placed on a roof field is wrapped in the dark palette, so its text is light on teal in both themes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Widths Rule",
+        "body": "Expanded width only with `font-display`. Body, buttons, labels and form text stay at normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Steady Numbers Rule",
+        "body": "Every page count, streak, ayah count and table cell uses tabular figures so readouts never jitter as they increment.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Planes Rule",
+        "body": "Surfaces at rest have no shadow. Separate planes with a hairline or a change of tone. A shadow is allowed only on a layer that floats over the page.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do build page-level visuals from the breeze block. One block equals one page.",
+      "Do keep text on any roof field in the dark palette (wrap the field in `.dark`).",
+      "Do use `font-display` (expanded Archivo) for headings and numerals only.",
+      "Do use tabular figures on every count, page number and table cell.",
+      "Do take status colours only from `state-*` and `hifz-*` tokens.",
+      "Do separate surfaces with 1px hairlines and tone, and keep corners at 2px.",
+      "Do honour reduced motion: page enter is 180ms ease-out, and looping motion stops."
+    ],
+    "donts": [
+      "Don't use cream or warm-white grounds. Terrazzo is cool green-grey.",
+      "Don't add shadows to cards, buttons or inputs, and don't use gradients for fills.",
+      "Don't draw more than one pleated roof line in a view.",
+      "Don't light a block (turquoise, teal or brass in its opening) unless it states real memorisation data. On marketing surfaces, label example data as an example.",
+      "Don't use the Arabic face or sacred text as ornament. Arabic appears only as content, right to left, at line-height 2.1."
+    ]
+  }
+}

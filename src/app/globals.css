@@ -6,144 +6,170 @@
 /* -------------------------------------------------------------------------
    HifzFlow design tokens
    -------------------------------------------------------------------------
-   Palette is deliberately low-chroma. The only saturated colour in the system
-   is the green primary and the memorisation state ramp, so that progress data
-   is the loudest thing on any screen. Everything structural stays quiet.
+   The world is 1960s Malaysian mosque modernism: terrazzo floors, a roof of
+   teal mosaic, breeze-block screens that let light through. Structure stays
+   in terrazzo neutrals; teal is the brand; turquoise is light coming through
+   a memorised page; brass marks weak pages and streaks; clay marks overdue.
+   Depth comes from flat overlapping planes and hairlines, not soft shadows.
    ------------------------------------------------------------------------- */
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.125rem;
 
-  /* Surfaces */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.21 0.006 285.9);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.21 0.006 285.9);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.21 0.006 285.9);
+  /* Surfaces: terrazzo, cool green-grey rather than cream. */
+  --background: oklch(0.968 0.005 175);
+  --foreground: oklch(0.23 0.022 195);
+  --card: oklch(0.992 0.003 175);
+  --card-foreground: oklch(0.23 0.022 195);
+  --popover: oklch(0.992 0.003 175);
+  --popover-foreground: oklch(0.23 0.022 195);
 
-  /* Brand green. Deep and desaturated: reads as considered, not celebratory. */
-  --primary: oklch(0.52 0.108 158);
-  --primary-foreground: oklch(0.985 0.005 155);
+  /* Roof teal. */
+  --primary: oklch(0.45 0.075 195);
+  --primary-foreground: oklch(0.985 0.005 180);
 
-  --secondary: oklch(0.968 0.002 286.4);
-  --secondary-foreground: oklch(0.27 0.006 286);
-  --muted: oklch(0.968 0.002 286.4);
-  --muted-foreground: oklch(0.552 0.014 285.9);
-  --accent: oklch(0.968 0.002 286.4);
-  --accent-foreground: oklch(0.27 0.006 286);
+  --secondary: oklch(0.93 0.008 180);
+  --secondary-foreground: oklch(0.27 0.025 195);
+  --muted: oklch(0.93 0.008 180);
+  --muted-foreground: oklch(0.49 0.018 195);
+  --accent: oklch(0.925 0.012 180);
+  --accent-foreground: oklch(0.25 0.025 195);
 
-  --destructive: oklch(0.577 0.219 27.3);
-  --destructive-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.53 0.16 30);
+  --destructive-foreground: oklch(0.985 0.005 30);
 
-  --border: oklch(0.921 0.003 286.3);
-  --input: oklch(0.921 0.003 286.3);
-  --ring: oklch(0.52 0.108 158);
+  --border: oklch(0.885 0.01 180);
+  --input: oklch(0.85 0.012 180);
+  --ring: oklch(0.45 0.075 195);
 
   /* ---------------------------------------------------------------------
      Memorisation state tokens.
      Used by the tracking grid, the mushaf strip and the murajaah queue.
      Defined once here so a page never invents its own status colour.
      --------------------------------------------------------------------- */
-  --state-new: oklch(0.93 0.002 286);
-  --state-new-foreground: oklch(0.45 0.01 286);
-  --state-learning: oklch(0.62 0.11 240);
-  --state-learning-foreground: oklch(0.985 0.005 240);
-  --state-memorised: oklch(0.52 0.108 158);
-  --state-memorised-foreground: oklch(0.985 0.005 155);
-  --state-weak: oklch(0.72 0.15 75);
-  --state-weak-foreground: oklch(0.25 0.05 75);
-  --state-overdue: oklch(0.6 0.2 25);
-  --state-overdue-foreground: oklch(0.985 0.005 25);
+  --state-new: oklch(0.915 0.008 180);
+  --state-new-foreground: oklch(0.42 0.02 195);
+  --state-learning: oklch(0.86 0.05 225);
+  --state-learning-foreground: oklch(0.3 0.06 235);
+  --state-memorised: oklch(0.54 0.09 182);
+  --state-memorised-foreground: oklch(0.985 0.005 180);
+  --state-weak: oklch(0.78 0.13 80);
+  --state-weak-foreground: oklch(0.27 0.05 70);
+  --state-overdue: oklch(0.53 0.15 35);
+  --state-overdue-foreground: oklch(0.985 0.005 35);
 
-  /* Five-step ramp for the activity heatmap and page-density strip. */
-  --hifz-0: oklch(0.955 0.002 286);
-  --hifz-1: oklch(0.885 0.045 158);
-  --hifz-2: oklch(0.78 0.08 158);
-  --hifz-3: oklch(0.645 0.1 158);
-  --hifz-4: oklch(0.5 0.115 158);
+  /* Five-step ramp for the activity heatmap and page-density strip:
+     terrazzo through turquoise light to roof teal. */
+  --hifz-0: oklch(0.915 0.008 180);
+  --hifz-1: oklch(0.85 0.05 180);
+  --hifz-2: oklch(0.74 0.08 182);
+  --hifz-3: oklch(0.6 0.09 185);
+  --hifz-4: oklch(0.45 0.075 195);
 
-  /* Charts. Ordered so series 1 is always the brand green. */
-  --chart-1: oklch(0.52 0.108 158);
-  --chart-2: oklch(0.62 0.11 240);
-  --chart-3: oklch(0.72 0.15 75);
-  --chart-4: oklch(0.58 0.13 305);
-  --chart-5: oklch(0.6 0.12 25);
+  /* Cast concrete: the frame of a breeze block around its opening. */
+  --block: oklch(0.86 0.012 180);
+  /* The roof band. Its own token because content inside it uses the dark
+     palette for light-on-teal text. */
+  --roof: oklch(0.5 0.085 192);
+  /* Brass sunlight: the logo's opening and the "next page" marker. */
+  --sun: oklch(0.8 0.13 82);
 
-  /* Sidebar shell, used from the dashboard milestone onward. */
-  --sidebar: oklch(0.985 0.001 286);
-  --sidebar-foreground: oklch(0.21 0.006 285.9);
-  --sidebar-primary: oklch(0.52 0.108 158);
-  --sidebar-primary-foreground: oklch(0.985 0.005 155);
-  --sidebar-accent: oklch(0.955 0.002 286);
-  --sidebar-accent-foreground: oklch(0.27 0.006 286);
-  --sidebar-border: oklch(0.921 0.003 286.3);
-  --sidebar-ring: oklch(0.52 0.108 158);
+  /* Charts. Ordered so series 1 is always the brand teal. */
+  --chart-1: oklch(0.45 0.075 195);
+  --chart-2: oklch(0.62 0.07 235);
+  --chart-3: oklch(0.72 0.13 80);
+  --chart-4: oklch(0.55 0.1 330);
+  --chart-5: oklch(0.55 0.14 35);
+
+  --sidebar: oklch(0.955 0.006 178);
+  --sidebar-foreground: oklch(0.23 0.022 195);
+  --sidebar-primary: oklch(0.45 0.075 195);
+  --sidebar-primary-foreground: oklch(0.985 0.005 180);
+  --sidebar-accent: oklch(0.925 0.012 180);
+  --sidebar-accent-foreground: oklch(0.25 0.025 195);
+  --sidebar-border: oklch(0.885 0.01 180);
+  --sidebar-ring: oklch(0.45 0.075 195);
 }
 
+/* Theme-level only: the roof and sun stay put inside nested `.dark`
+   wrappers (roof bands, the landing field), which use the dark palette for
+   their text but must keep the page theme's roof colour. */
+:root.dark {
+  --roof: oklch(0.33 0.055 196);
+  --sun: oklch(0.82 0.13 82);
+}
+
+/* Night: the surau after Isya, lit from inside. */
 .dark {
-  --background: oklch(0.172 0.004 285.9);
-  --foreground: oklch(0.96 0.002 286);
-  --card: oklch(0.208 0.005 285.9);
-  --card-foreground: oklch(0.96 0.002 286);
-  --popover: oklch(0.208 0.005 285.9);
-  --popover-foreground: oklch(0.96 0.002 286);
+  --background: oklch(0.19 0.018 200);
+  --foreground: oklch(0.95 0.008 180);
+  --card: oklch(0.225 0.02 200);
+  --card-foreground: oklch(0.95 0.008 180);
+  --popover: oklch(0.225 0.02 200);
+  --popover-foreground: oklch(0.95 0.008 180);
 
-  --primary: oklch(0.72 0.128 160);
-  --primary-foreground: oklch(0.19 0.035 158);
+  --primary: oklch(0.74 0.1 180);
+  --primary-foreground: oklch(0.18 0.03 195);
 
-  --secondary: oklch(0.262 0.006 286);
-  --secondary-foreground: oklch(0.96 0.002 286);
-  --muted: oklch(0.262 0.006 286);
-  --muted-foreground: oklch(0.68 0.011 286);
-  --accent: oklch(0.28 0.007 286);
-  --accent-foreground: oklch(0.96 0.002 286);
+  --secondary: oklch(0.27 0.02 200);
+  --secondary-foreground: oklch(0.95 0.008 180);
+  --muted: oklch(0.27 0.02 200);
+  --muted-foreground: oklch(0.72 0.02 190);
+  --accent: oklch(0.29 0.022 200);
+  --accent-foreground: oklch(0.95 0.008 180);
 
-  --destructive: oklch(0.65 0.19 25.5);
+  --destructive: oklch(0.66 0.16 30);
   --destructive-foreground: oklch(0.98 0 0);
 
   --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.72 0.128 160);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.74 0.1 180);
 
-  --state-new: oklch(0.3 0.005 286);
-  --state-new-foreground: oklch(0.7 0.01 286);
-  --state-learning: oklch(0.68 0.12 240);
-  --state-learning-foreground: oklch(0.18 0.04 240);
-  --state-memorised: oklch(0.72 0.128 160);
-  --state-memorised-foreground: oklch(0.19 0.035 158);
-  --state-weak: oklch(0.78 0.14 78);
-  --state-weak-foreground: oklch(0.22 0.05 78);
-  --state-overdue: oklch(0.66 0.19 25);
-  --state-overdue-foreground: oklch(0.18 0.04 25);
+  --state-new: oklch(0.29 0.02 200);
+  --state-new-foreground: oklch(0.72 0.02 190);
+  --state-learning: oklch(0.45 0.06 230);
+  --state-learning-foreground: oklch(0.95 0.01 230);
+  --state-memorised: oklch(0.72 0.1 180);
+  --state-memorised-foreground: oklch(0.18 0.03 195);
+  --state-weak: oklch(0.8 0.13 80);
+  --state-weak-foreground: oklch(0.22 0.05 70);
+  --state-overdue: oklch(0.66 0.15 35);
+  --state-overdue-foreground: oklch(0.18 0.04 35);
 
-  --hifz-0: oklch(0.245 0.004 286);
-  --hifz-1: oklch(0.33 0.045 160);
-  --hifz-2: oklch(0.44 0.075 160);
-  --hifz-3: oklch(0.58 0.105 160);
-  --hifz-4: oklch(0.74 0.13 160);
+  --hifz-0: oklch(0.27 0.018 200);
+  --hifz-1: oklch(0.36 0.05 185);
+  --hifz-2: oklch(0.48 0.08 182);
+  --hifz-3: oklch(0.61 0.1 180);
+  --hifz-4: oklch(0.76 0.11 178);
 
-  --chart-1: oklch(0.72 0.128 160);
-  --chart-2: oklch(0.68 0.12 240);
-  --chart-3: oklch(0.78 0.14 78);
-  --chart-4: oklch(0.68 0.13 305);
-  --chart-5: oklch(0.68 0.14 25);
+  --block: oklch(0.34 0.02 200);
 
-  --sidebar: oklch(0.196 0.004 285.9);
-  --sidebar-foreground: oklch(0.96 0.002 286);
-  --sidebar-primary: oklch(0.72 0.128 160);
-  --sidebar-primary-foreground: oklch(0.19 0.035 158);
-  --sidebar-accent: oklch(0.262 0.006 286);
-  --sidebar-accent-foreground: oklch(0.96 0.002 286);
+  --chart-1: oklch(0.74 0.1 180);
+  --chart-2: oklch(0.7 0.08 235);
+  --chart-3: oklch(0.8 0.13 80);
+  --chart-4: oklch(0.7 0.1 330);
+  --chart-5: oklch(0.68 0.14 35);
+
+  --sidebar: oklch(0.21 0.018 200);
+  --sidebar-foreground: oklch(0.95 0.008 180);
+  --sidebar-primary: oklch(0.74 0.1 180);
+  --sidebar-primary-foreground: oklch(0.18 0.03 195);
+  --sidebar-accent: oklch(0.29 0.022 200);
+  --sidebar-accent-foreground: oklch(0.95 0.008 180);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.72 0.128 160);
+  --sidebar-ring: oklch(0.74 0.1 180);
 }
 
 @theme inline {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-instrument-sans), var(--font-inter), sans-serif;
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-arabic: var(--font-naskh), 'Noto Naskh Arabic', serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Flat planes: small controls carry no shadow. Floating layers (menus,
+     dialogs) keep theirs, because there it separates planes. */
+  --shadow-xs: none;
+  --shadow-sm: none;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -181,6 +207,9 @@
   --color-hifz-2: var(--hifz-2);
   --color-hifz-3: var(--hifz-3);
   --color-hifz-4: var(--hifz-4);
+  --color-block: var(--block);
+  --color-roof: var(--roof);
+  --color-sun: var(--sun);
 
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -197,9 +226,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
   --radius-xl: calc(var(--radius) + 4px);
 }
 
@@ -214,8 +243,12 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-feature-settings: 'cv11', 'ss01';
-    font-variation-settings: normal;
+  }
+
+  /* Display type is Archivo pulled wide, like the lettering cast into
+     1960s concrete; running text stays at normal width. */
+  .font-display {
+    font-stretch: 118%;
   }
 
   /* Page counts, streak days and ayah numbers must never jitter as they
@@ -234,7 +267,14 @@
   }
 
   ::selection {
-    @apply bg-primary/20;
+    background: color-mix(in oklch, var(--state-memorised) 35%, transparent);
+  }
+
+  html {
+    scrollbar-color: color-mix(in oklch, var(--foreground) 25%, transparent)
+      transparent;
+    accent-color: var(--primary);
+    caret-color: var(--primary);
   }
 
   /* Date inputs otherwise impose a browser-native minimum content width
@@ -286,5 +326,29 @@
 
   .page-transition {
     animation: page-enter 0.18s ease-out;
+  }
+
+  /* The quatrefoil opening of one breeze block. Apply to an element that
+     fills a block; its background shows through the opening only. */
+  .breeze-opening {
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='black'%3E%3Ccircle cx='12' cy='7.6' r='3.9'/%3E%3Ccircle cx='12' cy='16.4' r='3.9'/%3E%3Ccircle cx='7.6' cy='12' r='3.9'/%3E%3Ccircle cx='16.4' cy='12' r='3.9'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3C/g%3E%3C/svg%3E")
+      center / 100% 100% no-repeat;
+  }
+
+  /* The folded-plate roof line, as a 22px strip of deep pleats 112px wide.
+     `eave` hangs below a teal band (points down); `ridge` sits on top of one
+     (points up). Give the strip the band's background colour. */
+  .eave,
+  .ridge {
+    height: 22px;
+    mask: var(--pleats) 0 0 / 112px 100% repeat-x;
+  }
+
+  .eave {
+    --pleats: conic-gradient(from 111.45deg at top, #000 137.1deg, #0000 0);
+  }
+
+  .ridge {
+    --pleats: conic-gradient(from -68.55deg at bottom, #000 137.1deg, #0000 0);
   }
 }

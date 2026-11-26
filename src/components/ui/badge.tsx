@@ -11,11 +11,13 @@ const badgeVariants = cva(
         default: 'border-transparent bg-primary text-primary-foreground',
         secondary: 'border-transparent bg-secondary text-secondary-foreground',
         outline: 'text-foreground',
+        // Solid token pairs: tinted text on a 12% wash of the same hue fell
+        // below 4.5:1 for the lighter states.
         memorised:
-          'border-state-memorised/25 bg-state-memorised/12 text-state-memorised',
+          'border-transparent bg-state-memorised text-state-memorised-foreground',
         learning:
-          'border-state-learning/25 bg-state-learning/12 text-state-learning',
-        weak: 'border-state-weak/30 bg-state-weak/15 text-state-weak',
+          'border-transparent bg-state-learning text-state-learning-foreground',
+        weak: 'border-transparent bg-state-weak text-state-weak-foreground',
       },
     },
     defaultVariants: { variant: 'default' },
