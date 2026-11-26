@@ -48,13 +48,13 @@ export function RemindersForm({
           disabled={pending}
           onClick={() => setEnabled((current) => !current)}
           className={cn(
-            'relative h-6 w-10 shrink-0 rounded-full transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring/60',
+            'relative h-6 w-10 shrink-0 rounded-sm transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring/60',
             enabled ? 'bg-primary' : 'bg-input'
           )}
         >
           <span
             className={cn(
-              'absolute top-0.5 size-5 rounded-full bg-background shadow-sm transition-transform',
+              'absolute top-0.5 size-5 rounded-[1px] bg-background transition-transform',
               enabled ? 'translate-x-[1.125rem]' : 'translate-x-0.5'
             )}
           />

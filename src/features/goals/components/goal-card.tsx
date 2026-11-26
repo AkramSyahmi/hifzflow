@@ -159,10 +159,10 @@ export function GoalCard({
               {goal.scope_ayahs.toLocaleString('en')} ayahs
             </span>
           </div>
-          <div className="h-1.5 overflow-hidden rounded-full bg-muted">
+          <div className="h-1.5 overflow-hidden bg-muted">
             <div
               className={cn(
-                'h-full rounded-full transition-all',
+                'h-full transition-all',
                 goal.state === 'complete'
                   ? 'bg-state-memorised'
                   : goal.state === 'behind' || goal.state === 'stalled'

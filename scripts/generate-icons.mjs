@@ -17,8 +17,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'public', 'icons');
 
 /** Roof teal and brass sunlight, matching --roof and --sun in the light palette. */
-const TEAL = '#16767a';
-const SUN = '#e3b04b';
+const TEAL = '#047270';
+const SUN = '#e7b551';
 
 /**
  * One breeze block: a concrete square with a quatrefoil opening, sunlight

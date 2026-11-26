@@ -1,4 +1,3 @@
-import { Card, CardContent } from '@/components/ui/card';
 import { MADANI_PAGE_COUNT, TOTAL_AYAHS, TOTAL_JUZ } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
@@ -16,15 +15,13 @@ function Stat({
   className?: string;
 }) {
   return (
-    <Card className={cn('gap-0 py-4', className)}>
-      <CardContent className="px-4">
-        <p className="text-xs font-medium text-muted-foreground">{label}</p>
-        <p className="tabular mt-1 font-display text-2xl font-semibold tracking-tight">
-          {value}
-        </p>
-        <p className="tabular mt-0.5 text-xs text-muted-foreground">{detail}</p>
-      </CardContent>
-    </Card>
+    <div className={cn('bg-card px-5 py-4', className)}>
+      <p className="text-xs font-medium text-muted-foreground">{label}</p>
+      <p className="tabular mt-1.5 font-display text-3xl leading-none font-bold tracking-tight">
+        {value}
+      </p>
+      <p className="tabular mt-1.5 text-xs text-muted-foreground">{detail}</p>
+    </div>
   );
 }
 
@@ -53,7 +50,9 @@ export function ProgressStats({ pages }: { pages: readonly PageStatus[] }) {
   const percent = ((memorisedAyahs / TOTAL_AYAHS) * 100).toFixed(1);
 
   return (
-    <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+    // One slab ruled into cells (1px gaps over the border colour), not four
+    // separate cards.
+    <div className="grid grid-cols-2 gap-px overflow-hidden rounded-md border bg-border lg:grid-cols-4">
       <Stat
         label="Of the Quran"
         value={`${percent}%`}

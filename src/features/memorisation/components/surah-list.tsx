@@ -50,10 +50,10 @@ export function SurahList({
                   {surah.name_arabic}
                 </span>
               </div>
-              <div className="mt-1.5 h-1 overflow-hidden rounded-full bg-muted">
+              <div className="mt-1.5 h-1 overflow-hidden bg-muted">
                 <div
                   className={cn(
-                    'h-full rounded-full transition-all',
+                    'h-full transition-all',
                     complete ? 'bg-state-memorised' : 'bg-hifz-3'
                   )}
                   style={{ width: `${percent}%` }}
