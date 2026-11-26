@@ -91,7 +91,9 @@ function QueueRow({
           Rated {item.confidence}/5
         </span>
       ) : (
-        <div className="flex items-center gap-1">
+        // Below sm the buttons take their own row under the page details,
+        // indented to the text column, so the details keep their width.
+        <div className="flex basis-full items-center gap-1.5 pl-13 sm:basis-auto sm:gap-1 sm:pl-0">
           {isPending ? (
             <span className="flex items-center gap-2 px-2 text-xs text-muted-foreground">
               <Loader2 className="size-3 animate-spin" aria-hidden="true" />
@@ -106,7 +108,7 @@ function QueueRow({
                 title={option.hint}
                 aria-label={`Page ${item.page_number}: ${option.hint}`}
                 className={cn(
-                  'tabular size-8 rounded-md border text-xs font-medium transition-colors',
+                  'tabular size-10 rounded-md border text-sm font-medium transition-colors sm:size-8 sm:text-xs',
                   'hover:border-primary hover:bg-primary hover:text-primary-foreground',
                   'outline-none focus-visible:ring-2 focus-visible:ring-ring/60'
                 )}
@@ -181,6 +183,11 @@ export function ReviewQueue({ items }: { items: readonly QueueItem[] }) {
 
   return (
     <div>
+      {remaining > 0 ? (
+        <p className="text-xs text-muted-foreground">
+          Ratings: 1 is very shaky, 5 is fluent.
+        </p>
+      ) : null}
       <ul className="divide-y divide-border">
         {optimisticItems.map((item) => (
           <QueueRow

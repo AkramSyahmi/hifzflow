@@ -28,12 +28,23 @@ export function NavLinks({
             key={link.href}
             href={link.href}
             aria-current={isActive ? 'page' : undefined}
+            // The mobile strip scrolls horizontally; keep the current page in
+            // view instead of leaving it past the edge.
+            ref={
+              isActive
+                ? (node) =>
+                    node?.scrollIntoView({
+                      block: 'nearest',
+                      inline: 'nearest',
+                    })
+                : undefined
+            }
             className={cn(
               linkClassName,
               'transition-colors',
               isActive
                 ? 'bg-accent font-medium text-foreground'
-                : 'text-muted-foreground hover:text-foreground',
+                : 'text-muted-foreground hover:text-foreground'
             )}
           >
             {link.label}

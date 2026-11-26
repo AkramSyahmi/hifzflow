@@ -60,9 +60,6 @@ export default async function HomePage({
         ) : null}
 
         <section className="border-b py-20 sm:py-28">
-          <p className="mb-4 text-xs font-medium tracking-widest text-primary uppercase">
-            Milestone 9 · Settings
-          </p>
           <h1 className="max-w-2xl font-display text-4xl leading-[1.1] font-semibold tracking-tight text-balance sm:text-5xl">
             Memorise the Quran on a schedule you can actually keep.
           </h1>
@@ -76,12 +73,12 @@ export default async function HomePage({
               <Link href="/sign-up">Create an account</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/design-system">View the design system</Link>
+              <Link href="/sign-in">I already have an account</Link>
             </Button>
           </div>
         </section>
 
-        <section className="grid gap-px py-16 sm:grid-cols-3 sm:gap-8">
+        <section className="grid gap-8 py-16 sm:grid-cols-3">
           {pillars.map((pillar) => (
             <div key={pillar.title} className="space-y-2">
               <h2 className="font-display text-sm font-semibold tracking-tight">
@@ -97,9 +94,7 @@ export default async function HomePage({
 
       <footer className="border-t">
         <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-6 text-xs text-muted-foreground">
-          <span>
-            {APP_NAME} — memorisation tracking arrives in the next milestones.
-          </span>
+          <span>{APP_NAME} — Quran memorisation and murajaah planner.</span>
           <span className="tabular">v0.1.0</span>
         </div>
       </footer>

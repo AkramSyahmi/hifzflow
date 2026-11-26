@@ -44,15 +44,17 @@ export function ActivityHeatmap({
     <figure className={cn('space-y-3', className)}>
       {/* Horizontal scroll rather than shrinking: squares below about ten
           pixels stop being readable, and a squashed year is worse than a
-          scrollable one. */}
-      <div className="-mx-1 overflow-x-auto px-1 pb-1">
+          scrollable one. Reversed flex starts the scroll at the newest
+          weeks, so today is visible without JavaScript; the SVG's auto
+          right margin keeps it left-aligned when it fits. */}
+      <div className="-mx-1 flex flex-row-reverse overflow-x-auto px-1 pb-1">
         <svg
           width={width}
           height={height}
           viewBox={`0 0 ${width} ${height}`}
           role="img"
           aria-label={`Activity over the last year. ${activeDays} active days.`}
-          className="block"
+          className="mr-auto block shrink-0"
         >
           {months.map((month) => (
             <text

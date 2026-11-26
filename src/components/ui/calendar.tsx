@@ -32,8 +32,7 @@ function Calendar({
         ),
         month_grid: 'w-full border-collapse',
         weekdays: 'flex',
-        weekday:
-          'text-muted-foreground w-9 text-center text-xs font-normal',
+        weekday: 'text-muted-foreground w-9 text-center text-xs font-normal',
         week: 'flex w-full mt-1',
         day: 'relative p-0 text-center text-sm',
         day_button: cn(

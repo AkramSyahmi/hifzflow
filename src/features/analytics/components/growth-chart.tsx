@@ -60,6 +60,11 @@ export function GrowthChart({ data }: { data: readonly GrowthPoint[] }) {
           />
           <XAxis
             dataKey="day"
+            // One tick per month start; evenly spaced daily ticks repeated
+            // the same month label.
+            ticks={data
+              .filter((point) => point.day.endsWith('-01'))
+              .map((point) => point.day)}
             tickFormatter={formatMonth}
             minTickGap={48}
             tickLine={false}
